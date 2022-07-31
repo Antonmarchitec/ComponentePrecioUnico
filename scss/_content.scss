@@ -1,0 +1,224 @@
+@import "fontColors";
+
+.contenedor{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    background:$LightGray ;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .base{
+        width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 50px $GrayishBlue;
+        .contenedor_base{   
+            width: 100%;
+            padding: 30px;
+            background: white;
+            .contenedor_base_title{
+                color: $Cyan;
+                font-weight: 700;
+                
+            }
+            .contenedor_base_subtitle{
+                margin-top: 15px;
+                color: $BrightYellow;
+                font-weight: 400;
+                font-size:18px ;
+
+            }
+            .contenedor_base_parrafo{
+                width: 98%;
+                margin-top: 15px;
+                color:$GrayishBlue ;
+            }
+        }
+
+
+        .contenedor_baseArticles{
+            width: 100%;
+            background: $Cyan;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+
+            //CAJA #1
+            .contenedor_baseArticles_art{
+                width: 50%;
+                padding: 30px;
+                height: 210px;
+                .contenedor_baseArticles_art_title{
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                
+                .contenedor_baseArticles_art_number{
+                    margin-top: 10px;
+                    font-size: 30px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 700;
+                    span{
+                        color: rgb(216, 216, 216);
+                        font-size: 14px;
+                        margin-left: 10px;
+                        font-weight: 400;
+                    }
+                }
+                .contenedor_baseArticles_art_parrafo{
+                    margin-top: 8px;
+                    color: white;
+                    font-weight: 400;
+                    font-size: 14px;
+
+                }
+                
+                .contenedor_baseArticles_art_btn{
+                    margin-top: 20px;
+                    width: 90%;
+                    padding: 10px 0px;
+                    border: none;
+                    background: $BrightYellow;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px rgb(179, 179, 179);
+                    color: white;
+                    cursor: pointer;
+                    transition: 0.8s all;
+                }
+                .contenedor_baseArticles_art_btn:hover{
+                    background: white;
+                    color: rgb(56, 56, 56);
+                }
+            }
+            
+            //CAJA #2
+            .contenedor_baseArticles_art_us{
+                padding: 30px;
+                width: 50%;
+                background:rgb(85, 182, 182);
+                height: 210px;
+                .contenedor_baseArticles_art_titleUs{
+                    color: white;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+                .contenedor_baseArticles_art_parrafoUs{
+                    margin-top: 15px;
+                    color:rgb(238, 232, 232);
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+        
+    }
+   
+}
+
+@media (min-width:20px) and (max-width:423px){
+    .contenedor{
+        width: 100%;
+        .base{
+            width: 90%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 50px $GrayishBlue;
+            .contenedor_base{   
+                width: 100%;
+                padding: 30px;
+                background: white;
+            }
+    
+    
+            .contenedor_baseArticles{
+                width: 100%;
+                background: $Cyan;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+    
+    
+                //CAJA #1
+                .contenedor_baseArticles_art{
+                    width: 100%;
+                    padding: 30px;
+                    height: 210px;
+                    .contenedor_baseArticles_art_title{
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                    
+                    .contenedor_baseArticles_art_number{
+                        margin-top: 10px;
+                        font-size: 30px;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 700;
+                        span{
+                            color: rgb(216, 216, 216);
+                            font-size: 14px;
+                            margin-left: 10px;
+                            font-weight: 400;
+                        }
+                    }
+                    .contenedor_baseArticles_art_parrafo{
+                        margin-top: 8px;
+                        color: white;
+                        font-weight: 400;
+                        font-size: 14px;
+    
+                    }
+                    
+                    .contenedor_baseArticles_art_btn{
+                        margin-top: 20px;
+                        width: 90%;
+                        padding: 10px 0px;
+                        border: none;
+                        background: $BrightYellow;
+                        border-radius: 5px;
+                        box-shadow: 0px 0px 10px rgb(179, 179, 179);
+                        color: white;
+                        cursor: pointer;
+                        transition: 0.8s all;
+                    }
+                    .contenedor_baseArticles_art_btn:hover{
+                        background: white;
+                        color: rgb(56, 56, 56);
+                    }
+                }
+                
+                //CAJA #2
+                .contenedor_baseArticles_art_us{
+                    width: 100%;
+                    padding: 30px;
+                    background:rgb(85, 182, 182);
+                    height: 210px;
+                    .contenedor_baseArticles_art_titleUs{
+                        color: white;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    .contenedor_baseArticles_art_parrafoUs{
+                        margin-top: 15px;
+                        color:rgb(238, 232, 232);
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
