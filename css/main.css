@@ -121,6 +121,7 @@ body {
 @media (min-width: 20px) and (max-width: 423px) {
   .contenedor {
     width: 100%;
+    height: 800px;
   }
   .contenedor .base {
     width: 90%;
